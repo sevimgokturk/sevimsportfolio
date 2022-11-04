@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Sevim's Portfolio Page</title>
+</head>
+<body>
+  <header>
+    <nav>
+        <div class="hamburger">
+            <input type="checkbox">
+            <div class="hamburgerlines">
+                <span class="lines line1">
+                </span>
+                <span class="lines line2">
+                </span>
+                <span class="lines line3">
+                </span>
+            </div>
+            <ul class="menu-items">
+                <li><a class="nav-link" href="../index.html">Home</a></li>
+                <li><a class="nav-link" href="../Resume/index.html">Resume</a></li>
+                <li><a class="nav-link" href="#">About</a></li>
+                <li><a class="nav-link" href="../Contact/index.html">Contact</a></li>
+            </ul>
+        </div>
+     </nav>
+</header>
+
+<main>
+    <div class="allpage">
+        <section class="aboutme">
+            <article>
+                <img id="image-galeri" alt="some photos">
+            </article>
+            <article>
+                <h1 class="hello">Hello</h1>
+                <p class="aboutme-text">
+                    I'm Sevim. I'm a software tester. After teaching mathematics for 10 years, I decided to continue my career in an IT field.My teaching career has allowed me to improve myself in problem solving and explaining my solution. I decided to change my career from explaining to students to explaining to computers.<br>I like being in nature, taking nature walks and camping with my family.
+                </p>
+            </article>
+        </section>
+        <section class="projects">
+            <article>
+                <fieldset>
+                    <legend>Software Testing Project</legend>
+                <div>
+                    <img class="medunna" src="../img/medunna-logo.png" >
+                    <a href="https://medunna.com/"  target="_blank"><br>Medunna Home Page</a><br>
+                    <a href=""><img src="../img/Octocat.png"  alt="github" style="width:0px ;"></a>
+                    <a href="https://github.com/sevimgokturk" target="_blank">GitHub</a><br>
+                    <button onclick="medunnaProjectInfo()">Medunna Project Info</button>
+                </div>
+                <div>
+                    <iframe id="iframeMedunna" src="medunna.html" height="200px" width="500px" frameborder="1"></iframe>
+                </div>
+            </fieldset>
+            </article>
+            <article>
+                <fieldset>
+                    <legend>JS CSS HTML Project</legend>
+                <section class="game">
+                    <article >
+                        <div class="grid-container">
+                            <div class="grid-item">🐣 200</div>
+                            <div class="grid-item">🦊 100</div>
+                            <div class="grid-item">🦄 10</div>  
+                            <div class="grid-item">🐸 300</div>
+                            <div class="grid-item">🐟 50</div>
+                            <div class="grid-item">🐌 1000</div>  
+                            <div class="grid-item">🐓 500</div>
+                            <div class="grid-item">🐼 30</div>
+                            <div class="grid-item">🦁 600</div>  
+                          </div>
+                    </article>
+                    <button class="startButton"  onclick="start()">START</button>   
+                </section>
+            </fieldset>
+            </article>
+            <article>
+                <fieldset>
+                    <legend>JS CSS HTML API Project</legend>
+                        <div class="app">
+                            <div class="header">
+                                <h1>Weather Forecast</h1>
+                                <input type="text" id="searchBar">
+                                <button onclick="weatherForecast()">click</button>
+                            </div>
+                            <div class="content">
+                                <div id="city" class="city"></div>
+                                <div id="temp" class="temp"></div>
+                                <div id="desc" class="desc"></div>
+                            </div>
+                        </div>
+
+                </fieldset>
+            </article>
+        </section>
+    </div>      
+</main>
+<footer>
+    <section class="my-coordones">
+        <a href="https://github.com/sevimgokturk" target="_blank"> <img src="../img/Octocat.png" alt="github" ></a>
+        <a href="https://www.linkedin.com/in/sevim-gokturk-5a001a253/" target="_blank" alt="linkedin"><img src="../img/linkedin.png"></a>
+        <div class="adress-container">
+        <img src="../img/adress.png" alt="adress">
+        <p class="adress">Avenue du 14 Avril 1E<br>1020 Renens<br>Switzerland</p>
+        </div>
+        <div class="tel">
+        <img src="../img/telephone-call.png"> 
+        <p class="tel-no">+41 76 768 2</p>  
+        </div>     
+    </section>
+    <section>
+        <p class="copyright">Copyright &copy; 2022, All Right Reserved</p>    
+    </section>
+</footer>
+<script src="code.js"></script>  
+</body>
+</html>
